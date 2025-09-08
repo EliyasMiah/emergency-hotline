@@ -86,7 +86,9 @@ for (const call of calls) {
   });
 // calling section end
 }
+// clear history start
   document.getElementById("clear-history").addEventListener("click", function () {
   document.getElementById("transaction-container").innerHTML =""
   callingData=[]
 });
+// clear history end
