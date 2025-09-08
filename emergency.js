@@ -1,6 +1,6 @@
+
+// heart count Start.
 let count = 0;
-
-
 const hearts = document.getElementsByClassName("heart-icon");
 for(const heart of hearts)
 {
@@ -9,6 +9,8 @@ for(const heart of hearts)
     document.getElementById('heart-value').innerText = count;
   })
 }
+// heart count end
+// copy count start
 const copyData= []
 const copyCounts = document.getElementsByClassName('copy-count')
 for(const copyCount of copyCounts)
@@ -29,8 +31,8 @@ const card = this.closest("div.rounded-xl");
   
   })
 }
-
-// ------------------
+// copy count end
+// calling section start
 
 let callingData = [];
 const calls = document.querySelectorAll(".call-button");
@@ -82,6 +84,7 @@ for (const call of calls) {
   }
     
   });
+// calling section end
 }
   document.getElementById("clear-history").addEventListener("click", function () {
   document.getElementById("transaction-container").innerHTML =""
